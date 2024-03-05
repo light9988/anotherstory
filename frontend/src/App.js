@@ -12,7 +12,7 @@ import kid_banner from './Assets/banner_kids2.png';
 
 function App() {
   return (
-    <div className='overflow-hidden '>
+    <div className='overflow-hidden '>   
       <BrowserRouter>
         <Header />
         <Routes>
@@ -26,7 +26,6 @@ function App() {
           <Route path="/login" element={<LoginSingUpPage />} />
         </Routes>
         <Footer />
-
       </BrowserRouter>
     </div>
   );
