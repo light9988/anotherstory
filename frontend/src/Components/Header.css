@@ -1,0 +1,133 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-title {
+    color: black;
+    font-size: 3rem;
+}
+
+.header-nav-menu {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.header-nav-list {
+    display: none;
+    flex-direction: row;
+    list-style-type: none;
+    color: black;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav-list:hover {
+    text-decoration: underline;
+}
+
+/* .nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  } */
+
+.hamburger-menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: transparent; */
+    width: auto;
+    padding: 8px;
+    border: none;
+    margin: 4px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333333;
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+}
+
+/* styles.css */
+
+.header-button {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.header-nav-login {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.header-nav-cart {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-nav-cart-count {
+    /* background-color: red; */
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: -8px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+
+@media(min-width:44rem) {
+    .header-nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-nav-list {
+        display: flex;
+    }
+
+    .hamburger-menu-button {
+        display: none;
+    }
+}

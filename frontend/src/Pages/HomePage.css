@@ -1,0 +1,38 @@
+
+.cards {
+  grid-column: span 12;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.panel-card {
+  grid-column: span 12;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.panel-card-title {
+  padding: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.panel-card-img {
+  height: 100%;
+  width: 100%;
+  padding: 0rem;
+  margin: 0;
+
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 1rem;
+}
