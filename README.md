@@ -1,4 +1,4 @@
-![homepage](as/images/p1_1.jpg)
+![homepage](frontend/src/assets/p1_1.jpg)
 # Another Story
 
 ## Overview
