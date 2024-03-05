@@ -1,4 +1,4 @@
-![homepage](as/images/p1.jpg)
+![homepage](as/images/p1_1.jpg)
 # Another Story
 
 ## Overview
