@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin:0;
+    background-color: #e8e4e4; 
+  }
+
+  .navbar-name{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .navbar-logo {
+    text-align: center;
+  } */
+  
+  .navbar-title {
+    font-size: 1.5rem; 
+  }
+  
+  .navbar-subtitle {
+    margin-top: 0.5rem; 
+    font-weight: bold;
+  }
+  
+  .navbar-login{
+    background-color: black;
+    color: white;
+    width: 6rem;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+  }

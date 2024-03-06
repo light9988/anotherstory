@@ -60,6 +60,10 @@ const Product = mongoose.model("product", {
         type: String,
         required: true
     },
+    quantity: {
+    type: Number,
+    required: true
+  },
     image: {
         type: String,
         required: true
@@ -104,6 +108,7 @@ app.post('/addproduct', async (req, res) => {
     const product = new Product({
         id: id, //         req.body.id,
         name: req.body.name,
+        quantity: req.body.quantity,
         image: req.body.image,
         category: req.body.category,
         old_price: req.body.old_price,

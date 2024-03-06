@@ -8,7 +8,7 @@ const AddProduct = () => {
 
     const [productDetails, setProductDetails] = useState({
         name: '',
-        // quantity:'',
+        quantity:'',
         category: 'women',
         image: '',
         new_price: '',
@@ -67,11 +67,10 @@ const AddProduct = () => {
             })
         }
 
-
     }
 
     return (
-        <div className="h-1/3 flex flex-col gap-7 p-16 bg-gray-200 ml-5 my-5 
+        <div className="h-1/3 flex flex-col gap-7 p-16 bg-gray-200 ml-5 my-5
     w-auto sm:w-[500px] lg:w-[750px] xl:w-[1280px] ">
             <div className="space-y-2 ">
                 <p>Product title</p>
@@ -90,10 +89,10 @@ const AddProduct = () => {
                     <input value={productDetails.new_price} onChange={changeHandler} className='text-sm p-2  ' type="number" name="new_price" placeholder="Type here" />
                 </div>
 
-                {/* <div className="space-y-2 ">
+                <div className="space-y-2 ">
                     <p>Quantity</p>
-                    <input value={productDetails.new_price} onChange={changeHandler} className='text-sm p-2  ' type="number" name="quantity" placeholder="Type here" />
-                </div> */}
+                    <input value={productDetails.quantity} onChange={changeHandler} className='text-sm p-2  ' type="number" name="quantity" placeholder="Type here" />
+                </div>
 
             </div>
 
