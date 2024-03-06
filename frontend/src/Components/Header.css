@@ -25,35 +25,40 @@
     list-style-type: none;
 }
 
+.header-nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color:white;
+    padding: 1rem;
+    width: 200px;
+    height: auto;
+}
+
 .header-nav-list {
     display: none;
     flex-direction: row;
     list-style-type: none;
     color: black;
     justify-content: space-around;
-
-    padding: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
     margin: 0;
+    position: relative;
+}
+
+.header-nav-list.show {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-nav-list:hover {
     text-decoration: underline;
 }
 
-/* .nav-menu.show {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    background-color: #ffffff;
-    padding: 1rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  } */
-
 .hamburger-menu-button {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: space-between;
     /* background-color: transparent; */
     width: auto;
@@ -74,9 +79,9 @@
     width: 30px;
     height: 3px;
     margin: 6px 0;
+    border: none;
 }
 
-/* styles.css */
 
 .header-button {
     display: flex;
@@ -116,10 +121,84 @@
     right: 30px;
 }
 
+/* .global-nav {
+    position: relative;
+}
+
+.global-nav-list {
+    display: none;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+}
+
+.global-nav-list--open {
+    display: flex;
+}
+
+.global-nav-link {
+    display: inline-block;
+    color: white;
+
+    padding: 8px;
+    text-decoration: none;
+}
+
+.global-nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#global-nav-button {
+    background-color: black;
+    color: white;
+
+    width: auto;
+
+    padding: 8px;
+    border: none;
+    margin: 4px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.global-nav-item {
+    position: relative;
+}
+
+.global-nav-button {
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0;
+    border: none;
+
+    height: 30px;
+    width: 30px;
+
+    cursor: pointer;
+}
+
+.global-nav-button span {
+    display: block;
+    background-color: white;
+
+    width: 25px;
+    height: 2px;
+    margin: 3px;
+} */
 
 @media(min-width:44rem) {
     .header-nav-menu {
         display: flex;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -130,4 +209,12 @@
     .hamburger-menu-button {
         display: none;
     }
+
+    /* .global-nav-list {
+        display: flex;
+    }
+
+    .global-nav-button {
+        display: none;
+    } */
 }

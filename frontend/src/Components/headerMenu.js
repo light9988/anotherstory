@@ -1,6 +1,6 @@
 const headerMenu = [
     {
-        name: "Everything",
+        name: "Home",
         path: "/",
     },
     {

@@ -4,6 +4,21 @@ import { ShopContext } from '../Context/ShopContext';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
 import './Header.css'
+import GlobalNav from '../Components/GlobalNav';
+
+// const Header = ({ setPage }) => {
+//   const [Menu, setMenu] = useState('HomePage');
+//   const { getTotalCartItems } = useContext(ShopContext);
+//   const [showMenu, setShowMenu] = useState(false);
+
+//   const handleLogoClick = () => {
+//     console.log('Logo clicked');
+//     setPage('Home');
+//   }
+
+//   const toggleMenu = () => {
+//     setShowMenu(!showMenu);
+//   }
 
 const Header = () => {
 
@@ -14,6 +29,7 @@ const Header = () => {
     const navMenu = document.querySelector('.header-nav-menu');
     navMenu.classList.toggle('show');
   }
+
 
   return (
     <header className='header'>
@@ -36,6 +52,8 @@ const Header = () => {
         <div className="bar"></div>
         <div className="bar"></div>
       </button>
+      
+      {/* <GlobalNav className="header-nav" setPage={setPage} /> */}
 
       <div onClick={() => setMenu(' ')} className="header-button">
         {localStorage.getItem('auth-token')
