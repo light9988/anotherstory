@@ -4,61 +4,90 @@
     align-items: center;
     padding: 0.5rem;
     width: 80%;
+    height: auto;
 }
 
-.list-product-header{
+/* ListProduct.css */
+
+.list-product-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .list-product-header-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     padding: 1rem;
 }
 
 .list-product-header-menu {
-    /* display: grid;
-    grid-template-columns: repeat(8, auto); */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     font-weight: bold;
-    padding: 1rem;
-    width:80%;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.list-product-header-menu-list {
+    display: flex;
+    justify-content: center;
+}
+
+#list-product-header-menu-list-title{
+    grid-column-start: 2;
+    grid-column: span 3;
 }
 
 .list-product-body {
-    background-color: #f0f0f0;
-    align-items: center;
+    margin: 1.25rem 0;
+    padding: 1.25rem;
+    background-color: #f9fafb;
+    overflow-y: scroll;
     height: 30%;
-    width: 90%;
 }
 
 .list-product-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 1rem;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    border-bottom: 2px solid #d1d5db;
+    padding: 0.5rem;
 }
 
 .list-product-image {
     width: 80px;
     height: 80px;
+    margin-left: 0.5rem;
+    margin-right: 0.3rem;
 }
 
 .list-product-column {
     display: flex;
     justify-content: center;
+}
+
+#list-product-column-name{
+    grid-column-start: 2;
+    grid-column: span 3;
+}
+
+#list-product-remove{
+    cursor: pointer;
+    margin: auto;
+    width: 10;
+    height: 10;
+}
+
+.list-product-footer {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-#list-product-remove {
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
-    margin-top:35px;
+.list-product-footer-content {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1rem;
 }
