@@ -1,4 +1,8 @@
 
+.main{
+  padding-top: 60px;
+}
+
 .cards {
   grid-column: span 12;
 
@@ -22,6 +26,7 @@
   padding: 3rem;
   text-align: center;
   font-size: 2rem;
+  margin-top: 0;
 }
 
 .panel-card-img {

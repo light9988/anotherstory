@@ -1,17 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './NewsLetter.css';
 
 const NewsLetter = () => {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubscribe = () => {
+    if (email.trim() === '') {
+      setMessage('Please enter a valid email address.');
+    } else {
+      setMessage('You have subscribed successfully!');
+    }
+  };
+
   return (
-    <div className='w-[100%] md:w-[90%] flex flex-col items-center justify-center m-auto px-0 py-20 my-16
-    gap-8 bg-gray-100 text-black'>
-      <h2 className='text-xl font-bold capitalize'>Get 25% off your first order</h2>
-      <p className='text-lg font-medium '>subscribe to receive the latest news and promotions</p>
-      <div className='flex p-1 items-center bg-white rounded-3xl font-custom-robot gap-3'>
-        <input className=' rounded-3xl p-1' type="email" placeholder='Your Email Address' />
-        <button className='text-sm cursor-pointer bg-gray-300 rounded-3xl w-28 p-1 focus:outline-none hover:bg-black hover:text-white'>Subscribe</button>
+    <div className="newsletter-container">
+      <h2 className="newsletter-title">Get 25% off your first order</h2>
+      <p className="newsletter-subtitle">Subscribe to receive the latest news and promotions</p>
+      <div className="newsletter-input-container">
+        <input
+          className="newsletter-input"
+          type="email"
+          placeholder="Your Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <button
+          className="newsletter-button"
+          onClick={handleSubscribe}
+        >
+          Subscribe
+        </button>
       </div>
+      {message && (
+        <p className={`newsletter-message ${message.includes('successfully') ? 'success-message' : 'error-message'}`}>
+          {message}
+        </p>
+      )}
     </div>
-  )
+  );
 }
+
 
 export default NewsLetter 

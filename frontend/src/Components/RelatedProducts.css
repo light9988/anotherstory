@@ -1,0 +1,31 @@
+.realtedproducts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; 
+    align-items: center;
+    margin: 2.5rem 0; 
+}
+
+.realtedproducts h1 {
+    font-size: 1.875rem; 
+    font-weight: bold; 
+}
+
+.realtdproducts-item {
+    margin-top: 1.25rem; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 2rem; 
+}
+
+@media (min-width: 640px) {
+    .realtdproducts-item {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .realtdproducts-item {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}

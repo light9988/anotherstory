@@ -4,7 +4,7 @@ import HomePage from './Pages/HomePage';
 import ShopCategory from './Pages/ShopCategory';
 import ProductPage from './Pages/ProductPage';
 import CartPage from './Pages/CartPage';
-import LoginSingUpPage from './Pages/LoginSingUpPage';
+import LoginSignUpPage from './Pages/LoginSignUpPage';
 import Footer from './Components/Footer';
 import men_banner from './Assets/banner_men1.png';
 import women_banner from './Assets/banner_women1.png';
@@ -23,7 +23,7 @@ function App() {
           <Route path="/product" element={<ProductPage />} />
           <Route path="/product/:productId" element={<ProductPage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/login" element={<LoginSingUpPage />} />
+          <Route path="/login" element={<LoginSignUpPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

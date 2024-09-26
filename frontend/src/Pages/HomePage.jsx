@@ -1,13 +1,13 @@
-import React from 'react'
-import Hero from '../Components/Hero'
-import Popular from '../Components/Popular'
-import Offers from '../Components/Offers'
-import NewCollections from '../Components/NewCollections'
-import NewsLetter from '../Components/NewsLetter'
+import React from 'react';
+import Hero from '../Components/Hero';
+import Popular from '../Components/Popular';
+import Offers from '../Components/Offers';
+import NewCollections from '../Components/NewCollections';
+import NewsLetter from '../Components/NewsLetter';
 import './HomePage.css';
-import hero_image from '../Assets/p1_1.png'
-import popular_image from '../Assets/p2_1.png'
-import newin_image from '../Assets/p3_1.png'
+import hero_image from '../Assets/p1_1.png';
+import popular_image from '../Assets/p2_1.png';
+import newin_image from '../Assets/p3_1.png';
 
 const HomePage = () => {
   return (

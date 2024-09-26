@@ -25,10 +25,15 @@ const Header = () => {
   const [Menu, setMenu] = useState('HomePage');
   const { getTotalCartItems } = useContext(ShopContext);
   const [showMenu, setShowMenu] = useState(false);
+
+  // const toggleMenu = () => {
+  //   const navMenu = document.querySelector('.header-nav-menu');
+  //   navMenu.classList.toggle('show');
+  // }
+
   const toggleMenu = () => {
-    const navMenu = document.querySelector('.header-nav-menu');
-    navMenu.classList.toggle('show');
-  }
+    setShowMenu(prevShowMenu => !prevShowMenu);
+  };
 
 
   return (
@@ -36,7 +41,8 @@ const Header = () => {
       <div className="header-logo">
         <h2 className="header-title">Another Story</h2>
       </div>
-      <ul className={`header-nav-menu ${Menu === ' ' ? 'show' : ''}`}>
+      {/* <ul className={`header-nav-menu ${Menu === ' ' ? 'show' : ''}`}> */}
+      <ul className={`header-nav-menu ${showMenu ? 'show' : ''}`}>
         <li onClick={() => setMenu('Home')} className={`header-nav-list${(Menu === 'Home') ? '' : ''}`}>
           <Link to='/'>Home</Link></li>
         <li onClick={() => setMenu('Women')} className={`header-nav-list${(Menu === 'Women') ? '' : ''}`}>
@@ -75,6 +81,7 @@ const Header = () => {
     </header>
   )
 }
+export default Header
 
 //   return (
 //     <div className='flex justify-around p-5 bg-white-200  font-custom-poppin'>
@@ -125,4 +132,3 @@ const Header = () => {
 //   )
 // }
 
-export default Header

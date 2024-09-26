@@ -5,6 +5,7 @@ import Breadcrum from '../Components/Breadcrum';
 import ProductDisplay from '../Components/ProductDisplay';
 import DescriptionBox from '../Components/DescriptionBox';
 import RelatedProducts from '../Components/RelatedProducts';
+import './ProductPage.css';
 
 const ProductPage = () => {
     const {all_product} = useContext(ShopContext);
@@ -12,11 +13,11 @@ const ProductPage = () => {
     const product = all_product.find((e) => e.id === Number(productId));
 
     return (
-        <div className='mx-auto max-w-[1280px] '>
+        <div className='product-page'>
             <Breadcrum product={product} />
             <ProductDisplay product={product} />
             <DescriptionBox/>
-            <RelatedProducts/>
+            <RelatedProducts product={product} />
         </div>
     )
 }

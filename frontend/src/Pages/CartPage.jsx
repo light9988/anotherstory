@@ -1,9 +1,10 @@
-import React from 'react'
-import CartItems from '../Components/CartItems'
+import React from 'react';
+import CartItems from '../Components/CartItems';
+import './CartPage.css';
 
 const CartPage = () => {
   return (
-    <div className='mx-auto max-w-[1080px] my-10'>
+    <div className="cart-page-container">
       <CartItems/>
     </div>
   )

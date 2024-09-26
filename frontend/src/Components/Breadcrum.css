@@ -1,0 +1,10 @@
+/* Breadcrum.css */
+.breadcrum {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    text-transform: capitalize;
+  }
+  

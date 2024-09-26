@@ -1,0 +1,23 @@
+.product-page {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+    padding: 1rem;
+}
+
+/* .product-page > * {
+    margin-top: 2rem; 
+}
+
+.product-page .breadcrum {
+    margin-top: 0; 
+}
+
+.product-page .description-box {
+    margin-top: 2rem; 
+}
+
+.product-page .related-products {
+    margin-top: 2rem; 
+} */

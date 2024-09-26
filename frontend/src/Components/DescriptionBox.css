@@ -1,0 +1,29 @@
+.descriptionbox{
+    padding: 2.5rem;
+    margin-top: 8rem;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    gap: 2.5rem; 
+    padding: 1rem; 
+}
+
+.descriptionbox-nav {
+    padding: 1rem; 
+    background-color: #e2e8f0; 
+    cursor: pointer;
+}
+
+.descriptionbox-nav:hover {
+    background-color: #000; 
+    color: #fff; 
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column; 
+    border: 2px solid #f7fafc; 
+    padding: 1.25rem; 
+}
+

@@ -1,0 +1,144 @@
+.productdisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.productdisplay-left {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.productdisplay-main-img {
+  height: auto;
+  max-height: 500px;
+  margin-left: 1.25rem; 
+}
+
+.productdisplay-img-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; 
+  max-height: 500px;
+}
+
+.productdisplay-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem; 
+  padding-left: 2.5rem; 
+  padding-right: 2.5rem; 
+}
+
+.productdisplay-right-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* .productdisplay-right-star {
+  display: flex;
+  gap: 0.5rem; 
+  margin-top: 0.5rem; 
+} */
+
+.productdisplay-right-prices {
+  display: flex;
+  gap: 1.25rem; 
+  padding: 1rem; 
+}
+
+.productdisplay-right-price-old {
+  text-decoration: line-through;
+  font-size: 1.25rem; 
+  font-weight: 500; 
+  color: gray; 
+}
+
+.productdisplay-right-price-new {
+  font-size: 1.25rem; 
+  font-weight: 600; 
+}
+
+.productdisplay-right-size {
+  margin-top: 0.5rem; 
+}
+
+.productdisplay-right-size-title {
+  font-size: 1.125rem; 
+  font-weight: 500; 
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.productdisplay-right-size-options {
+  display: flex;
+  cursor: pointer;
+  gap: 1.25rem; 
+  font-weight: 600; 
+}
+
+.size-option {
+  border: 2px grey solid;
+  padding: 1rem; 
+  background-color: #f3f4f6; 
+  transition: background-color 0.1s, color 0.1s; 
+}
+
+.size-option:hover {
+  background-color: black;
+  border: 2px black solid;
+  color: white;
+}
+
+.selected-size {
+  background-color: #f59e0b; 
+  color: black;
+}
+
+
+.productdisplay-right-category {
+  padding: 0.5rem 0; 
+}
+
+.productdisplay-right-discription-title {
+  font-size: 1.125rem; 
+  font-weight: 500; 
+  color: black; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+}
+
+.productdisplay-right-discription {
+  margin-top: 0.5rem; 
+}
+
+.productdisplay button {
+  width: 15rem; 
+  background-color: black;
+  padding: 1rem; 
+  border-radius: 1.875rem; 
+  border: 2px solid transparent;
+  margin: 1.25rem 0; 
+  color: white;
+  font-weight: 600; 
+}
+
+.productdisplay button:hover {
+  background-color: #f59e0b; 
+}
+
+@media (min-width: 1024px) {
+  .productdisplay {
+    flex-direction: row; 
+  }
+}
+
+@media (min-width: 640px) {
+  .productdisplay {
+    gap: 2.5rem; 
+  }
+}

@@ -1,5 +1,6 @@
-import React, { useState, useId } from "react";
+import React, { useState, useId, useContext } from "react";
 import Button from "./Button";
+import { ShopContext } from '../Context/ShopContext';
 import "./Modal.css";
 
 function Modal({ dialogRef }) {
@@ -20,7 +21,6 @@ function Modal({ dialogRef }) {
     const id = useId();
     const [submitMessage, setSubmitMessage] = useState('');
     const [isSubmitDisabled, setIsSubmitDisabled] = useState(false);
-
 
 
     const handleInputChange = (event) => {
@@ -117,6 +117,16 @@ function Modal({ dialogRef }) {
             return true;
         }
     };
+   
+    const { cartItems, deleteFromCart } = useContext(ShopContext); 
+    
+    const handleClearCart = () => {
+        Object.keys(cartItems).forEach(itemId => {
+            if (cartItems[itemId] > 0) {
+                deleteFromCart(itemId); 
+            }
+        });
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -129,8 +139,9 @@ function Modal({ dialogRef }) {
         const isPostValid = validatePostInput();
         if (isNameValid && isEmailValid && isConfirmEmailValid && isAddressValid && isCItyValid && isStateValid && isPostValid) {
             console.log("Form submitted:", { name: name, email: email, confirmEmail: confirmEmail, address: address, city: city, state: state, post:post});
-            setSubmitMessage(`Hi ${name}, You have submitted the data successfully!`);
+            setSubmitMessage(`Hi ${name}, You have placed the order successfully!`);
             setIsSubmitDisabled(true);
+            handleClearCart();
         }
     };
 

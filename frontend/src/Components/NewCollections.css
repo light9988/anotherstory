@@ -1,0 +1,33 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; 
+    align-items: center;
+    margin-top: 2.5rem; 
+}
+
+.new-collections h1 {
+    font-size: 1.875rem; 
+    font-weight: 700; 
+    border-bottom: 2px solid #D1D5DB; 
+    text-transform: uppercase;
+}
+
+.collections {
+    margin-top: 1.25rem; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 2rem; 
+}
+
+@media (min-width: 640px) {
+    .collections {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .collections {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}

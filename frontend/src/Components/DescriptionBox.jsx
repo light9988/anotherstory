@@ -1,14 +1,15 @@
 import React from 'react'
+import './DescriptionBox.css';
 
 const DescriptionBox = () => {
   return (
-    <div className='p-10 mt-20'>
-      <div className="descriptionbox-navigator flex gap-10 py-4">
-        <div className="descriptionbox-nav-box p-4 bg-gray-200 hover:bg-black hover:text-white cursor-pointer">Description</div>
-        <div className="description-nav-box fade p-4 bg-gray-200 hover:bg-black hover:text-white cursor-pointer">Reviews (1000+)</div>
+    <div className='descriptionbox'>
+      <div className="descriptionbox-navigator">
+        <div className="descriptionbox-nav">Description</div>
+        <div className="descriptionbox-nav">Reviews (1000+)</div>
       </div>
 
-      <div className="descriptionbox-description flex flex-col border-2 border-gray-100 p-5">
+      <div className="descriptionbox-description">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae aspernatur obcaecati maxime perspiciatis, a
           veritatis in velit! Praesentium assumenda ducimus cupiditate dolorem corporis sapiente eum. Natus ut ducimus nisi minus?
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis autem rerum deserunt eum? Reprehenderit expedita,
@@ -19,4 +20,4 @@ const DescriptionBox = () => {
   )
 }
 
-export default DescriptionBox
+export default DescriptionBox;

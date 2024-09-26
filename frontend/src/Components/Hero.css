@@ -1,0 +1,53 @@
+.hero {
+    height: 100vh;
+    background-color: #f00; 
+    display: flex;
+    font-family: 'YourCustomFont', sans-serif; 
+}
+
+.hero-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8rem; 
+    gap: 1.25rem; 
+}
+
+.hero-left h2 {
+    font-size: 1.125rem; 
+    font-weight: 700; 
+}
+
+.hand-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; 
+}
+
+.hand-hand-icon p,
+.hand-latest-btn div,
+.hero-left p {
+    font-weight: 800; 
+    font-size: 3.75rem; 
+}
+
+.hand-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    width: 20rem; 
+    height: 4rem; 
+    border-radius: 1.875rem; 
+    margin-top: 1.75rem; 
+    background-color: #fbbf24; 
+    font-weight: 700; 
+}
+
+.hero-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}

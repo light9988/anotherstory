@@ -1,0 +1,93 @@
+/* Container for the login/signup page */
+.loginsignup {
+    width: 100%;
+    background-color: black;
+    padding: 5rem 0; 
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  /* Inner container for centering and styling */
+  .loginsignup-container {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1080px;
+    background-color: white;
+    padding: 2.5rem 4rem; /* 10px in rem */
+  }
+  
+  /* Title styling */
+  .loginsignup-title {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  /* Styling for input fields */
+  .loginsignup-fields input {
+    width: 100%;
+    border: 2px solid #d1d5db; /* Gray color for border */
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem; /* 24px in rem */
+    color: #4b5563; /* Gray color for text */
+    font-size: 0.875rem; /* 14px in rem */
+  }
+  
+  /* Button styling */
+  .loginsignup-button {
+    width: 9rem; /* 36px in rem */
+    background-color: black;
+    margin-top: 1.25rem; /* 5px in rem */
+    border-radius: 1.5rem; /* 24px in rem */
+    padding: 0.75rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Login/Signup text styling */
+  .loginsignup-login,
+  .loginsignup-signup {
+    font-size: 0.875rem; /* 14px in rem */
+    margin-top: 1rem; /* 4px in rem */
+  }
+  
+  /* Red colored text with font weight */
+  .loginsignup-login span,
+  .loginsignup-signup span {
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* Agree to terms and conditions styling */
+  .loginsignup-agree {
+    margin-top: 0.75rem; /* 3px in rem */
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 4px in rem */
+    font-size: 0.875rem; /* 14px in rem */
+    color: black;
+    font-weight: medium; /* Ensure this matches your font-medium class */
+  }
+  
+  .close-button {
+    /* position: absolute; */
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .close-button:hover {
+    color: red;
+  }
+  

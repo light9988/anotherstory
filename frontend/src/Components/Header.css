@@ -19,25 +19,36 @@
 }
 
 .header-nav-menu {
-    display: flex;
-    position: relative;
-    gap: 1rem;
-    list-style-type: none;
+    display: none;
 }
 
 .header-nav-menu.show {
     display: flex;
     flex-direction: column;
-    position: relative;
-    background-color:white;
-    padding: 1rem;
-    width: 200px;
-    height: auto;
+    position: absolute;
+    /* background-color: white; */
+    top: 100%; 
+    left: auto; 
+    right: 0; 
+    z-index: 999;
+    /* padding: 0.5rem;
+    margin-top: 1rem; */
 }
 
 .header-nav-list {
-    display: none;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: black;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+/* .header-nav-list.show {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     color: black;
     justify-content: space-around;
@@ -45,12 +56,7 @@
     padding: 1rem;
     margin: 0;
     position: relative;
-}
-
-.header-nav-list.show {
-    display: flex;
-    flex-direction: column;
-}
+} */
 
 .header-nav-list:hover {
     text-decoration: underline;
@@ -200,10 +206,21 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        position: relative;
+        gap: 1rem;
+        list-style-type: none;
     }
 
     .header-nav-list {
         display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        color: black;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 0;
+        position: relative;
     }
 
     .hamburger-menu-button {
@@ -217,4 +234,13 @@
     .global-nav-button {
         display: none;
     } */
+
+    .header-nav-menu.show {
+        flex-direction: row;
+    }
+
+    .header-nav-list.show {
+        display: flex;
+        flex-direction: row;
+    }
 }

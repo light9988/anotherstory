@@ -6,4 +6,4 @@
 
 ## How to run:
 - npm i
-- npm start
+- npm start (node index.js)
