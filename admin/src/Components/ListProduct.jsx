@@ -75,38 +75,3 @@ const ListProduct = () => {
 }
 
 export default ListProduct;
-
-
-//     return (
-//         <div className="list-product-header flex flex-col items-center w-[80%]">
-//             <h1 className="list-product-header-title text-3xl font-bold p-5">All Product List</h1>
-//             <div className="list-product-header-menu grid grid-cols-8 font-semibold gap-1 md:gap-2 lg:gap-10 py-1  ">
-//                 <p className='list-product-header-menu-list flex justify-center'>Products</p>
-//                 <p className='list-product-header-menu-list col-start-2 col-span-3 flex justify-center ' id="list-product-header-menu-list-title">Title</p>
-//                 {/* <p className='flex justify-center' >Quantity</p> */}
-//                 <p className='list-product-header-menu-list flex justify-center' >Old Price</p>
-//                 <p className='list-product-header-menu-list flex justify-center '>New Price</p>
-//                 <p className='list-product-header-menu-list flex justify-center '>Category</p>
-//                 <p className='list-product-header-menu-list flex justify-center'>Remove</p>
-//             </div>
-
-//             <div className="list-product-body my-5 py-5  bg-gray-50 overflow-y-scroll h-1/3">
-//                 {allProducts.map((product, i) => {
-//                     return <div key={i} className="list-product-item items-center border-b-2 gap-1 md:gap-2 lg:gap-10
-//                 border-gray-400 py-2 grid grid-cols-8  ">
-//                         <img src={product.image} width={80} height={80} alt="" className="list-product-image mx-auto" />
-//                         <p className='list-product-column flex justify-center col-start-2 col-span-3 '>{product.name}</p>
-//                         {/* <p className='flex justify-center  '>{product.quantity}</p> */}
-//                         <p className='list-product-column flex justify-center '>${product.old_price}</p>
-//                         <p className='list-product-column flex justify-center '>${product.new_price}</p>
-//                         <p className='list-product-column flex justify -center'>${product.category}</p>
-//                         <img className="list-product-column cursor-pointer  mx-auto " id="list-product-remove" width={10} height={10} src={remove_icon} alt="" onClick={() => { remove_product(product.id) }} />
-//                     </div>
-//                 })}
-//             </div>
-
-//         </div>
-//     )
-// }
-
-// export default ListProduct

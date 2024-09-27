@@ -18,4 +18,3 @@ const headerMenu = [
 ];
 
 export default headerMenu;
-

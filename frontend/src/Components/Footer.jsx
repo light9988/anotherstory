@@ -9,59 +9,6 @@ import tiktok_icon from '../Assets/tiktok_icon.png'
 import twitter_icon from '../Assets/twitter_icon.png'
 import './Footer.css'
 
-// const Footer = () => {
-//     return (
-//         <div className='text-gray-300 bg-black p-18 '>
-//             <div className='flex flex-col sm:flex-row justify-around '>
-
-//                 {/* <div className="footer-logo flex items-center gap-5">
-//                     <img src={footer_logo} alt="" />
-//                 </div> */}
-
-//                 <ul className="footer-links flex justify-around space-x-4 ">
-//                     <li className='cursor-pointer text-lg hover:text-white hover:underline'>About
-//                         <ul className="footer-sub-menu-list">
-//                             <li className="cursor-pointer text-sm hover:text-white hover:underline">About us</li>
-//                             <li className="cursor-pointer text-sm hover:text-white hover:underline">Privacy Policy</li>
-//                             <li className="cursor-pointer text-sm hover:text-white hover:underline">Terms of Service</li>
-//                         </ul>
-//                     </li>
-//                     <li className='cursor-pointer text-lg hover:text-white hover:underline'>More Info
-//                         <ul className="footer-sub-menu-list">
-//                             <li className="cursor-pointer text-sm hover:text-white hover:underline">Shipping Policy</li>
-//                             <li className="cursor-pointer text-sm hover:text-white hover:underline">Return Policy</li>
-//                             <li className="cursor-pointer text-sm hover:text-white hover:underline">Terms of Service</li>
-//                         </ul>
-//                     </li>
-//                     <li className='cursor-pointer text-lg hover:text-white hover:underline'>Contact
-//                         <ul className="footer-sub-menu-list ">
-//                             <li className="footer-sub-menu-link cursor-pointer hover:text-white text-sm">customer@anotherstory.com</li>
-//                         </ul>
-//                     </li>
-//                 </ul>
-
-//                 <div className="footer-social-icon ">
-//                     <div className="footer-icons-container flex ">
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={instagram_icon} alt="" />
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={xhs_icon} alt="" />
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={wechat_icon} alt="" />
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={tiktok_icon} alt="" />
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={twitter_icon} alt="" />
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={pintester_icon} alt="" />
-//                         <img className='cursor-pointer bg-white rounded-full p-1 w-12 h-12' src={whatsapp_icon} alt="" />
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <div className="footer-copyright justify-center flex mt-5 border-t-2 border-white">
-//                 <p className='pt-5'>@Coupyright 2024 - All</p>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Footer
-
 const Footer = () => {
     return (
         <footer className="footer">

@@ -43,5 +43,3 @@ function GlobalNav({ className, setPage }) {
 }
 
 export default GlobalNav;
-
-

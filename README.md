@@ -2,15 +2,7 @@
 # Another Story
 
 ## Overview
-This is my fashion e-commerce website project.
-
-## If this is helpful to you, plase kindly support me here: 
-
-<p align="center">
-  <a href="https://venmo.com/u/lightandlight">
-    <img src="https://img.shields.io/badge/Coffee❤️-ff69b4.svg" alt="Donate" width="150" height="50">
-  </a>
-</p>
+This is my fashion e-commerce platform project.
 
 ## Technologies Used
 - JavaScript
@@ -20,6 +12,9 @@ This is my fashion e-commerce website project.
 - Node.JS
 - Express.JS
 - MongoDB
+
+### Database
+1. Connect to MongoDB
 
 ### Back-End
 1. Navigate to the Backend directory
